@@ -5,13 +5,14 @@ import Image from "next/image";
 import { BsSpotify } from "react-icons/bs";
 
 function Login({ providers }) {
+
   return (
     <div className="flex flex-col items-center bg-black min-h-screen w-full justify-center">
-     <img
-          className="w-52 mb-5"
-          src="https://links.papareact.com/9xl"
-          alt="spotify logo"
-        />
+      <img
+        className="w-52 mb-5"
+        src="https://links.papareact.com/9xl"
+        alt="spotify logo"
+      />
 
       {Object.values(providers).map((provider) => (
         <div key={provider.name}>
